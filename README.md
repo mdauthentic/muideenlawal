@@ -1,4 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is my portfolio website written with [Next.js](https://nextjs.org/) and [Contentlayer](https://contentlayer.dev/).
+
+It took a lot of time for me to push this out. The struggle to build a perfect portfolio website continues 😊, at least I have a starting point now.
+
+<!-- This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). -->
 
 ## Getting Started
 
