@@ -13,7 +13,7 @@ export default function Home() {
   )
 }
 
-export function Hero() {
+function Hero() {
   return (
     <section className="hero">
       <div className="container">
@@ -54,7 +54,7 @@ export function Hero() {
   )
 }
 
-export function Featured() {
+function Featured() {
   const posts = allPosts.sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
   return (
     <section className="post">
@@ -90,7 +90,7 @@ const projects = [
   { id: 4, git: "https://github.com/mdauthentic", title: "Soustitle", description: "A parser for subtitle (srt) files. It read and convert .srt files to csv or json. Available in Rust, Scala & Python.", tags: "#Rust, #Scala, #Python3, #Parsing" },
 ]
 
-export function Projects() {
+function Projects() {
   return (
     <section className="projects">
       <div className="container">
