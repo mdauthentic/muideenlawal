@@ -17,7 +17,7 @@ interface BookmarksEntity {
     tags?: (string)[] | null;
 }
 
-export async function getBookmarkData(): Promise<BookmarkData> {
+async function getBookmarkData(): Promise<BookmarkData> {
     const file: string = await fs.readFile(process.cwd() + '/data/bookmarks.json', 'utf8');
     const data: any = JSON.parse(file);
     return data;
