@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
-import { ibmSans, clashGrotesk } from '@/fonts/font'
+import { Analytics } from '@vercel/analytics/react';
+import { ibmSans, clashGrotesk, firaCode } from '@/fonts/font'
 import './globals.css'
 import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
@@ -17,10 +18,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${ibmSans.variable} ${clashGrotesk.variable}`}>
+      <body className={`${ibmSans.variable} ${clashGrotesk.variable} ${firaCode.variable}`}>
         <NavBar />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   )

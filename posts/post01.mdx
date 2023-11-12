@@ -9,7 +9,7 @@ cover: '/static/clark-van-der-beken-chcyjyRQV74-unsplash.png'
 
 We recommend using **Static Generation** (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.
 
-```css
+```css title="Sample CSS code"
 .blog-post h2 {
     font-weight: 500;
     font-size: 1.8rem;
@@ -21,7 +21,7 @@ We recommend using **Static Generation** (with and without data) whenever possib
 
 A clear example of the refined SQL is as follows:
 
-```SQL
+```sql title="Sample SQL code" showLineNumbers
 SELECT p.id
 FROM Person p
     JOIN address a ON p.Id = a.Person_ID

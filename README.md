@@ -6,7 +6,7 @@ It took a lot of time for me to push this out. The struggle to build a perfect p
 
 ## Cloning
 
-Feel free to clone, modify and use this template as you wish but kindly remove all my personal information 
+Feel free to clone, modify and use this template as you wish but kindly remove all my personal information.
 
 ## Getting Started
 
@@ -44,3 +44,12 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+## References
+Some links that were helpful during the development of this website are listed below. Images used on this site (apart from my personal photo) comes from [Unsplash](https://unsplash.com)
+
+- [delba.dev](https://delba.dev/blog/next-blog-build-time-syntax-highlighting): syntax highlighting
+- [Image 1](https://unsplash.com/photos/a-blue-and-white-wall-with-a-pattern-on-it-YtEob7T5CwU): featured image on blog
+- [Image 2](https://unsplash.com/photos/orange-pink-and-teal-illustration-Tk0B3Dfkf_4): featured image on blog
+- [Image 3](https://unsplash.com/photos/a-painting-of-a-multicolored-pattern-with-a-white-background-chcyjyRQV74): featured image on blog
