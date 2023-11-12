@@ -50,7 +50,7 @@ export default async function Bookmark() {
                                     </svg>
                                 </Link>
                             </div>
-                            <a href="/" className="badger">{obj.url}</a>
+                            <Link href={obj.url} className="badger" target="_blank">{obj.url}</Link>
                             <div className="hrLine" />
                             <div className="tagWrapper">{`${'#' + obj.tags?.join(", #")}`}</div>
                         </div>

@@ -4,7 +4,13 @@ It took a lot of time for me to push this out. The struggle to build a perfect p
 
 <!-- This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). -->
 
+## Cloning
+
+Feel free to clone, modify and use this template as you wish but kindly remove all my personal information 
+
 ## Getting Started
+
+This project uses [Clash Grotesk](https://www.fontshare.com/fonts/clash-grotesk) and [IBM Plex Sans](https://fonts.google.com/specimen/IBM+Plex+Sans?query=ibm+plex+sans&sort=date) available through [`next/font`](https://nextjs.org/docs/basic-features/font-optimization).
 
 First, run the development server:
 
@@ -22,7 +28,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<!-- This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font. -->
 
 ## Learn More
 
