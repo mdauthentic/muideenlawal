@@ -31,7 +31,7 @@ export default function About() {
                         <div className="aboutContent">
                             <div className="aboutContent">
                                 <div className="aboutTitleHolder">
-                                    <h1 className="aboutHeader">Muideen Lawal</h1>
+                                    <h1 className="aboutHeader highlight">Muideen Lawal</h1>
                                     <div className="aboutSubHead">Software<span className="highlight"> Engineer</span> based in <span className="textGrey">Paris</span></div>
                                 </div>
                             </div>
@@ -84,7 +84,7 @@ export default function About() {
                         </div>
                         <div className="aboutMoreBox">
                             <div className="item">
-                                <div className="aboutStackHeader">Backend/SQL</div>
+                                <div className="aboutStackHeader">Languages & Frameworks</div>
                                 <div className="aboutStackGrid">
                                     <div className="aboutStackItem">Rust</div>
                                     <div className="aboutStackItem">Scala</div>
