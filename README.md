@@ -10,7 +10,7 @@ Feel free to clone, modify and use this template as you wish but kindly remove a
 
 The lighthouse report is shown below.
 
-<img src="public/img/lighthouse.png" alt="DB2ERD">
+<img src="public/img/lighthouse-latest.png" alt="DB2ERD">
 
 ## Getting Started
 
