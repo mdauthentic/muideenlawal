@@ -1,37 +1,33 @@
 import Link from "next/link"
 import Image from "next/image"
 
-const menuLinks = [
-    { id: 1, title: "About", url: "/about" },
-    { id: 2, title: "Blog", url: "/blog" },
-    { id: 3, title: "Links", url: "/bookmark" },
-];
+const navigation = [
+    { id: 1, name: "About", href: "#about" },
+    { id: 2, name: "Projects", href: "#projects" },
+    { id: 3, name: "Stack", href: "#" },
+    { id: 4, name: "Contact", href: "#" },
+]
 
-export default function NavBar() {
+function NavBar() {
     return (
-        <>
-            <div className="container">
-                <div className="navFrame">
-                    <header className="header">
-                        <div className="navBox">
-                            <div className="navMenu">
-                                <Link href="/" className="logo"><Image src="img/icon.png" width={32} height={32} className="logoImg" alt="muideen photo" /></Link>
-                                <div className="menu">
-                                    {menuLinks.map((link) => (
-                                        <Link href={link.url} key={link.id} className="menuLink">{link.title}</Link>
-                                    ))}
-                                </div>
-                                <Link href="/" className="gitButton">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-github" viewBox="0 0 16 16">
-                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                                    </svg>
-                                    Fork
-                                </Link>
-                            </div>
-                        </div>
-                    </header>
+        <header className="sticky inset-x-0 top-0 z-50 p-4">
+            <nav className="flex items-center justify-between max-w-3xl mx-auto p-2 lg:px-3 backdrop-blur-[32px] bg-[rgba(255,255,255,0.85)] shadow-[rgb(228,229,233)_0px_0px_0px_0.5px,rgba(228,229,233,0.6)_0px_0px_0px_1px,rgb(249,249,251)_0px_0px_0px_3.5px,rgb(243,244,247)_0px_0px_0px_4px] rounded-2xl">
+                <div className="flex lg:flex-1">
+                    <Link href="/" className="flex items-center gap-x-2">
+                        <Image src="/img/icon.png" width={32} height={32} priority={false} className="rounded-lg" alt="muideen photo" />
+                        <span className="hidden lg:block">Muideen</span>
+                    </Link>
                 </div>
-            </div>
-        </>
+                <div className="flex gap-x-6 pr-2">
+                    {navigation.map((item) => (
+                        <a key={item.name} href={item.href} className="text-sm font-medium leading-6 text-[#171618]">
+                            {item.name}
+                        </a>
+                    ))}
+                </div>
+            </nav>
+        </header>
     )
 }
+
+export { NavBar }

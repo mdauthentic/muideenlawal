@@ -1,14 +1,14 @@
 import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/react';
-import { ibmSans, clashGrotesk, firaCode } from '@/fonts/font'
+import { schibstedGrotesk } from '@/fonts/font'
 import './globals.css'
-import NavBar from '@/components/NavBar'
-import Footer from '@/components/Footer'
+import { NavBar } from '@/components/NavBar';
 
 
 export const metadata: Metadata = {
   title: 'Muideen Lawal',
   description: 'Portfolio website',
+  themeColor: "#317EFB"
 }
 
 export default function RootLayout({
@@ -18,10 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${ibmSans.variable} ${clashGrotesk.variable} ${firaCode.variable}`}>
+      <body className={`${schibstedGrotesk.variable} antialiased`}>
         <NavBar />
         {children}
-        <Footer />
         <Analytics />
       </body>
     </html>

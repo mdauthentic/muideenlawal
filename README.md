@@ -1,4 +1,4 @@
-This is my portfolio website written with [Next.js](https://nextjs.org/) and [Contentlayer](https://contentlayer.dev/).
+This is my portfolio website written with [Next.js](https://nextjs.org/).
 
 It took a lot of time for me to push this out. The struggle to build a perfect portfolio website continues 😊, at least I have a starting point now.
 
@@ -7,6 +7,10 @@ It took a lot of time for me to push this out. The struggle to build a perfect p
 ## Cloning
 
 Feel free to clone, modify and use this template as you wish but kindly remove all my personal information.
+
+The lighthouse report is shown below.
+
+<img src="public/img/lighthouse.png" alt="DB2ERD">
 
 ## Getting Started
 
