@@ -14,7 +14,7 @@ The lighthouse report is shown below.
 
 ## Getting Started
 
-This project uses [Clash Grotesk](https://www.fontshare.com/fonts/clash-grotesk) and [IBM Plex Sans](https://fonts.google.com/specimen/IBM+Plex+Sans?query=ibm+plex+sans&sort=date) available through [`next/font`](https://nextjs.org/docs/basic-features/font-optimization).
+This project uses [Schibsted Grotesk](https://fonts.google.com/specimen/Schibsted+Grotesk) available through [`next/font`](https://nextjs.org/docs/basic-features/font-optimization).
 
 First, run the development server:
 

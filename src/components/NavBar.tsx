@@ -20,9 +20,9 @@ function NavBar() {
                 </div>
                 <div className="flex gap-x-6 pr-2">
                     {navigation.map((item) => (
-                        <a key={item.name} href={item.href} className="text-sm font-medium leading-6 text-[#171618]">
+                        <Link key={item.name} href={item.href} className="text-sm font-medium leading-6 text-[#171618]" title={item.name}>
                             {item.name}
-                        </a>
+                        </Link>
                     ))}
                 </div>
             </nav>

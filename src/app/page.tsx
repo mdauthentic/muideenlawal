@@ -67,26 +67,32 @@ function About() {
 
 const projects = [
   {
+    name: 'NextJs Portfolio',
+    description: "This website that you are currently on. Built with NextJs, Typescript and deployed on Vercel.",
+    tag: 'Rust/SQL',
+    href: 'https://github.com/mdauthentic/muideenlawal',
+  },
+  {
     name: 'Db2ERD',
-    email: "Create Entity-Relationship Diagrams from SQL Create statements using d2lang and dioxus Rust",
+    description: "Create Entity-Relationship Diagrams from SQL Create statements using d2lang and dioxus Rust",
     tag: 'Rust/SQL',
     href: 'https://github.com/mdauthentic/db2erd',
   },
   {
     name: 'Port Manager',
-    email: "A cross-platofrm desktop app to manage your ports made with Dioxus and Rust.",
+    description: "A cross-platofrm desktop app to manage your ports made with Dioxus and Rust.",
     tag: 'Rust',
     href: 'https://github.com/mdauthentic/portmanager',
   },
   {
     name: 'SQL Parser',
-    email: "An in-progress SQL parser written in Rust and uses Chumsky for parsing for educational purpose.",
+    description: "An in-progress SQL parser written in Rust and uses Chumsky for parsing for educational purpose.",
     tag: 'Rust/SQL',
     href: 'https://github.com/mdauthentic/sql-parser',
   },
   {
     name: 'SE Resume',
-    email: 'A Latex CV template for software engineers',
+    description: 'A Latex CV template for software engineers',
     tag: 'Latex',
     href: 'https://github.com/mdauthentic/se-resume',
   },
@@ -103,12 +109,12 @@ function Project() {
 
           <ul role="list" className="divide-y divide-gray-100">
             {projects.map((project) => (
-              <li key={project.email} className="flex justify-between gap-x-6 py-5">
+              <li key={project.name} className="flex justify-between gap-x-6 py-5">
                 <Link href={project.href} className="flex justify-between w-full">
                   <div className="flex min-w-0 gap-x-4">
                     <div className="min-w-0 flex-auto">
                       <p className="text-sm font-medium leading-6 text-[#171618]">{project.name}</p>
-                      <p className="mt-1 truncate text-sm leading-5 text-gray-500">{project.email}</p>
+                      <p className="mt-1 truncate text-sm leading-5 text-gray-500">{project.description}</p>
                     </div>
                   </div>
                   <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
@@ -121,7 +127,7 @@ function Project() {
           </ul>
 
           <div className="flex items-center justify-center mt-8">
-            <Link className="flex justify-center items-center align-middle bg-[#171618] text-white rounded-lg gap-1.5 px-4 py-2" href="https://github.com/mdauthentic" title='link to project in github repo'>
+            <Link className="flex justify-center items-center align-middle bg-[#171618] text-white text-sm rounded-lg gap-1.5 px-4 py-2" href="https://github.com/mdauthentic" title='link to project in github repo'>
               <span>See all</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right" viewBox="0 0 16 16"><path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path></svg>
             </Link>
