@@ -48,7 +48,7 @@ function About() {
       <div className="mx-auto max-w-3xl">
         <div className="grid gap-4 mx-4">
           <div className="flex items-start flex-[1_0_0px] flex-col flex-nowrap gap-1 h-auto justify-start p-0">
-            <h2 className="text-xl font-medium">Bio<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f60] to-[#f00ab3]">graphy</span></h2>
+            <h2 className="text-xl font-medium">Abo<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f60] to-[#f00ab3]">ut Me</span></h2>
           </div>
           <div className="text-sm">
             <p className="text-zinc-600">I am currently a Software Engineer at Opensee where I spend most of my time writing backend API services, optimizing queries on multidimensional workloads, and doing database research targeted towards the Fintech sector, and optimizing developer experience in general.</p>
@@ -69,7 +69,7 @@ const projects = [
   {
     name: 'NextJs Portfolio',
     description: "This website that you are currently on. Built with NextJs, Typescript and deployed on Vercel.",
-    tag: 'Rust/SQL',
+    tag: 'NextJs/TypeScript',
     href: 'https://github.com/mdauthentic/muideenlawal',
   },
   {
@@ -114,7 +114,7 @@ function Project() {
                   <div className="flex min-w-0 gap-x-4">
                     <div className="min-w-0 flex-auto">
                       <p className="text-sm font-medium leading-6 text-[#171618]">{project.name}</p>
-                      <p className="mt-1 truncate text-sm leading-5 text-gray-500">{project.description}</p>
+                      <p className="mt-1 text-sm leading-5 text-gray-500">{project.description}</p>
                     </div>
                   </div>
                   <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">

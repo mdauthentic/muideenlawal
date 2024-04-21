@@ -18,7 +18,7 @@ function NavBar() {
                         <span className="hidden lg:block">Muideen</span>
                     </Link>
                 </div>
-                <div className="flex gap-x-6 pr-2">
+                <div className="flex gap-x-4 pr-2">
                     {navigation.map((item) => (
                         <Link key={item.name} href={item.href} className="text-sm font-medium leading-6 text-[#171618]" title={item.name}>
                             {item.name}
