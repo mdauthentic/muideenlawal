@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { schibstedGrotesk } from '@/fonts/font'
 import './globals.css'
 import { NavBar } from '@/components/NavBar';
@@ -8,7 +8,7 @@ import { NavBar } from '@/components/NavBar';
 export const metadata: Metadata = {
   title: 'Muideen Lawal',
   description: 'Portfolio website',
-  themeColor: "#317EFB"
+  themeColor: "#bce4f5"
 }
 
 export default function RootLayout({
@@ -21,7 +21,7 @@ export default function RootLayout({
       <body className={`${schibstedGrotesk.variable} antialiased`}>
         <NavBar />
         {children}
-        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )
