@@ -3,12 +3,12 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <>
+    <div className="font-schibstedGrotesk">
       <Hero />
       <About />
       <Project />
       <Footer />
-    </>
+    </div>
   )
 }
 
@@ -50,7 +50,7 @@ function About() {
           <div className="flex items-start flex-[1_0_0px] flex-col flex-nowrap gap-1 h-auto justify-start p-0">
             <h2 className="text-xl font-medium">Abo<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f60] to-[#f00ab3]">ut Me</span></h2>
           </div>
-          <div className="text-sm">
+          <div>
             <p className="text-zinc-600">I am currently a Software Engineer at Opensee where I spend most of my time writing backend API services, optimizing queries on multidimensional workloads, and doing database research targeted towards the Fintech sector, and optimizing developer experience in general.</p>
             <p className="pt-3 text-zinc-600">
               In 2021, I received a PhD in Computer Science from the Université Grenoble Alpes, France and my thesis is "On Cost Estimation for the Recursive Relational Algebra", supervised by Pierre Genevès & Nabil Layaïda.
@@ -113,7 +113,7 @@ function Project() {
                 <Link href={project.href} className="flex justify-between w-full">
                   <div className="flex min-w-0 gap-x-4">
                     <div className="min-w-0 flex-auto">
-                      <p className="text-sm font-medium leading-6 text-[#171618]">{project.name}</p>
+                      <p className="font-medium leading-6 text-[#171618]">{project.name}</p>
                       <p className="mt-1 text-sm leading-5 text-gray-500">{project.description}</p>
                     </div>
                   </div>
