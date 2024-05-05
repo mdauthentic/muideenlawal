@@ -7,6 +7,7 @@ export default function Home() {
       <Hero />
       <About />
       <Project />
+      <TechStack />
       <Footer />
     </div>
   )
@@ -50,7 +51,7 @@ function About() {
           <div className="flex items-start flex-[1_0_0px] flex-col flex-nowrap gap-1 h-auto justify-start p-0">
             <h2 className="text-xl font-medium">Abo<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f60] to-[#f00ab3]">ut Me</span></h2>
           </div>
-          <div>
+          <div className="text-sm">
             <p className="text-zinc-600">I am currently a Software Engineer at Opensee where I spend most of my time writing backend API services, optimizing queries on multidimensional workloads, and doing database research targeted towards the Fintech sector, and optimizing developer experience in general.</p>
             <p className="pt-3 text-zinc-600">
               In 2021, I received a PhD in Computer Science from the Université Grenoble Alpes, France and my thesis is "On Cost Estimation for the Recursive Relational Algebra", supervised by Pierre Genevès & Nabil Layaïda.
@@ -113,7 +114,7 @@ function Project() {
                 <Link href={project.href} className="flex justify-between w-full">
                   <div className="flex min-w-0 gap-x-4">
                     <div className="min-w-0 flex-auto">
-                      <p className="font-medium leading-6 text-[#171618]">{project.name}</p>
+                      <p className="font-medium text-sm leading-6 text-[#171618]">{project.name}</p>
                       <p className="mt-1 text-sm leading-5 text-gray-500">{project.description}</p>
                     </div>
                   </div>
@@ -131,6 +132,53 @@ function Project() {
               <span>See all</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right" viewBox="0 0 16 16"><path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path></svg>
             </Link>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+const stacks = {
+  backend: ['scala', 'rust', 'bun', 'python', 'typescript', 'axum', 'fast-api'],
+  frontend: ['dioxus', 'flutter', 'tailwind', 'html', 'css', 'nextjs', 'react'],
+  database: ['clickhouse', 'postgres', 'mysql', 'sql', 'sqlite'],
+  framework: ['play-framework', 'cats', 'fs2', 'reqwest', 'airflow', 'apache spark', 'calcite'],
+  cicd: ['gitlab-ci', 'github-action', 'docker', 'gcp', 'pytest', 'scalatest', 'selenium', 'munit', 'scalamock', 'junit']
+}
+
+const BadgeMarker = ({ heading, items }: { heading: string, items: string[] }) => (
+  <div className="flex flex-col gap-1">
+    <h2 className="text-sm">{heading}</h2>
+    <div className="content-start items-start flex flex-none flex-row flex-wrap gap-2 h-min justify-start overflow-hidden relative w-full">
+      {items.map((item) => {
+        return <div key={item} className="flex flex-row flex-nowrap items-center gap-1.5 justify-center border px-2 py-1 border-solid border-[rgb(232,236,241)] text-xs rounded-lg">
+          <CheckmarkIcon />
+          <span>{item}</span>
+        </div>
+      })}
+    </div>
+  </div>
+)
+
+function TechStack() {
+  return (
+    <section className="px-6 py-16 text-[#171618]" id="techstack">
+      <div className="mx-auto max-w-3xl">
+        <div className="mx-4">
+          <div className="flex items-start flex-[1_0_0px] flex-col flex-nowrap gap-1 h-auto justify-start p-0">
+            <h2 className="text-xl font-medium">
+              Tech <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f60] to-[#f00ab3]">Stacks</span>
+            </h2>
+          </div>
+
+          {/* Stack */}
+          <div className="flex flex-col gap-4 py-4">
+            <BadgeMarker heading="Backend" items={stacks.backend} />
+            <BadgeMarker heading="Database" items={stacks.database} />
+            <BadgeMarker heading="Frontend/Crossplatform" items={stacks.frontend} />
+            <BadgeMarker heading="Framework" items={stacks.framework} />
+            <BadgeMarker heading="CI/CD/Testing" items={stacks.cicd} />
           </div>
         </div>
       </div>
@@ -192,3 +240,9 @@ function Social() {
     </div>
   )
 }
+
+const CheckmarkIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+  </svg>
+)
