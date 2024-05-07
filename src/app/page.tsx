@@ -140,9 +140,9 @@ function Project() {
 }
 
 const stacks = {
-  backend: ['scala', 'rust', 'bun', 'python', 'typescript', 'axum', 'fast-api'],
+  backend: ['scala', 'rust', 'bun', 'python', 'typescript', 'axum', 'elysia', 'fast-api'],
   frontend: ['dioxus', 'flutter', 'tailwind', 'html', 'css', 'nextjs', 'react'],
-  database: ['clickhouse', 'postgres', 'mysql', 'sql', 'sqlite'],
+  database: ['clickhouse', 'postgres', 'mysql', 'mssql', 'sqlite'],
   framework: ['play-framework', 'cats', 'fs2', 'reqwest', 'airflow', 'apache spark', 'calcite'],
   cicd: ['gitlab-ci', 'github-action', 'docker', 'gcp', 'pytest', 'scalatest', 'selenium', 'munit', 'scalamock', 'junit']
 }

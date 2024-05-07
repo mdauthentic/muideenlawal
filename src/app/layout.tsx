@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { schibstedGrotesk } from '@/fonts/font'
 import './globals.css'
@@ -8,6 +8,9 @@ import { NavBar } from '@/components/NavBar';
 export const metadata: Metadata = {
   title: 'Muideen Lawal',
   description: 'Portfolio website',
+}
+
+export const viewport: Viewport = {
   themeColor: "#bce4f5"
 }
 
