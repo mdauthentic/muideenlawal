@@ -1,8 +1,10 @@
 import type { Metadata, Viewport } from 'next'
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import { schibstedGrotesk } from '@/fonts/font'
+import { funnelSans } from '@/fonts/font'
 import './globals.css'
-import { NavBar } from '@/components/NavBar';
+import { Navigation } from '@/components/Navigation';
+import Quote from '@/components/Quote';
+import { Footer } from '@/components/Footer';
 
 
 export const metadata: Metadata = {
@@ -21,9 +23,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${schibstedGrotesk.variable} antialiased`}>
-        <NavBar />
+      <body className={`${funnelSans.variable} antialiased`}>
+        <Navigation />
         {children}
+        <Quote />
+        <Footer />
         <SpeedInsights />
       </body>
     </html>

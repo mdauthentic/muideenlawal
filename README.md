@@ -1,3 +1,5 @@
+> The old version of my website has been moved to a [different repository](https://github.com/mdauthentic/dev-folio). You can find it [here](https://github.com/mdauthentic/dev-folio).
+
 This is my portfolio website written with [Next.js](https://nextjs.org/).
 
 It took a lot of time for me to push this out. The struggle to build a perfect portfolio website continues 😊, at least I have a starting point now.
@@ -10,11 +12,11 @@ Feel free to clone, modify and use this template as you wish but kindly remove a
 
 The lighthouse report is shown below.
 
-<img src="public/img/lighthouse-latest.png" alt="DB2ERD">
+<img src="public/img/lighthouse-report.png" alt="DB2ERD">
 
 ## Getting Started
 
-This project uses [Schibsted Grotesk](https://fonts.google.com/specimen/Schibsted+Grotesk) available through [`next/font`](https://nextjs.org/docs/basic-features/font-optimization).
+This project uses [Funnel Sans](https://fonts.google.com/specimen/Funnel+Sans) available through [`next/font`](https://nextjs.org/docs/basic-features/font-optimization).
 
 First, run the development server:
 
