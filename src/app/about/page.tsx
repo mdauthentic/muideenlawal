@@ -75,13 +75,13 @@ const Social = () => (
         <Link href="https://linkedin.com/in/ma-lawal" title="LinkedIn profile" className="inline-flex items-center justify-center rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 h-9 w-9 text-white bg-glassBg backdrop-blur-2xl shadow-btnShadow">
             <LinkedinIcon size={18} strokeWidth={2} className="hover:scale-125 transition-all duration-[0.4s] ease-[ease-out] delay-[0s]" />
         </Link>
-        <Link href="https://linkedin.com/in/ma-lawal" title="LinkedIn profile" className="inline-flex items-center justify-center rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 h-9 w-9 text-white bg-glassBg backdrop-blur-2xl shadow-btnShadow">
+        <Link href="https://gihub.com/mdauthentic" title="Github profile" className="inline-flex items-center justify-center rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 h-9 w-9 text-white bg-glassBg backdrop-blur-2xl shadow-btnShadow">
             <GithubIcon size={16} strokeWidth={2} className="hover:scale-125 transition-all duration-[0.4s] ease-[ease-out] delay-[0s]" />
         </Link>
-        <Link href="https://linkedin.com/in/ma-lawal" title="LinkedIn profile" className="inline-flex items-center justify-center rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 h-9 w-9 text-white bg-glassBg backdrop-blur-2xl shadow-btnShadow">
+        <Link href="https://x.com/mdauthentic" title="Twitter/X profile" className="inline-flex items-center justify-center rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 h-9 w-9 text-white bg-glassBg backdrop-blur-2xl shadow-btnShadow">
             <X size={16} strokeWidth={2} className="hover:scale-125 transition-all duration-[0.4s] ease-[ease-out] delay-[0s]" />
         </Link>
-        <Link href="https://linkedin.com/in/ma-lawal" title="LinkedIn profile" className="inline-flex items-center justify-center rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 h-9 w-9 text-white bg-glassBg backdrop-blur-2xl shadow-btnShadow">
+        <Link href="#" title="Email address" className="inline-flex items-center justify-center rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 h-9 w-9 text-white bg-glassBg backdrop-blur-2xl shadow-btnShadow">
             <Mail size={16} strokeWidth={2} className="hover:scale-125 transition-all duration-[0.4s] ease-[ease-out] delay-[0s]" />
         </Link>
     </div>
