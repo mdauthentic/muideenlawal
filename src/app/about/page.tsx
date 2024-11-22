@@ -21,10 +21,12 @@ const ProfileIntro = () => (
     <div className="mx-auto max-w-2xl px-6 lg:px-2 mb-10">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.3fr]">
             <div className="flex flex-col gap-4">
-                <h2 className="text-primary text-lg tracking-tight font-semibold uppercase">Muideen Lawal</h2>
+                <h2 className="text-primary text-lg tracking-tight font-semibold">
+                    <span className="uppercase">Muideen Lawal</span>, {" "}
+                    <span>PhD</span>
+                </h2>
                 <p>
-                    Polyglot software engineer with experience developing scalable backend services and database
-                    query engines.
+                    Polyglot software engineer with a passion for technology and tinkering.
                 </p>
                 <Social />
             </div>
@@ -53,7 +55,7 @@ const Biography = () => (
             <div className="col-span-full lg:col-span-1">
                 <span className="text-primary text-sm tracking-[0.7375rem] uppercase">BIO</span>
             </div>
-            <div className="col-span-full lg:col-span-2 flex flex-col gap-4">
+            <div className="col-span-full lg:col-span-2 flex flex-col gap-4 text-primary">
                 <p>
                     Software Engineer currently at Opensee where I spend most of my time writing backend API services, optimizing queries on multidimensional workloads, conducting database research targeted towards the Fintech sector, and optimizing developer experience in general.
                 </p>
