@@ -36,7 +36,7 @@ export const Hero = () => (
 const DottedLink = () => (
     <Link href="/about" title="About me" className="flex items-center gap-2 pt-2 group">
         <div className="flex items-center gap-2 pt-2">
-            <span className="h-2 w-2 bg-glassBg"></span>
+            <span className="h-2 w-2 bg-glass-bg"></span>
             <span className="text-primary font-medium border-b border-b-primary group-hover:text-foreground">
                 About Me
             </span>
