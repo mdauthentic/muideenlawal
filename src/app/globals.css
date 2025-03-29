@@ -1,31 +1,35 @@
 @import 'tailwindcss';
 
-@theme {
+:root {
+  --background: #fff;
+  --foreground: #332b29;
+}
+
+@theme inline {
   --color-background: #131316;
   --color-foreground: #9394a1;
   --color-primary: #f7f8f8;
   --color-card-bg: hsl(240deg 3% 14% / 90%);
   --color-accent: #fe552e;
 
-  --background-image-glass: radial-gradient(
-    ellipse at center,
-    rgba(0, 225, 244, 0.15),
-    hsla(0, 0%, 100%, 0)
-  );
-  --background-image-glass-bg: radial-gradient(
-    98.13% 199.7% at 98.13% 100%,
-    #fe6947,
-    #fd366e 41.6%,
-    #fd366e
-  );
+  --color-primary: #b3d77e;
+  --color-secondary: #eeeee1;
+  --color-accent: #6078ff;
+  --color-topBorder: hsl(240deg 4.35% 9.02% / 14%);
+  --color-greyLight: #292b34;
+  --color-tertiary: #f2f2f2;
 
-  --shadow-btn-shadow:
-    0.1875rem 0.1875rem #2c2c2f, 0.25rem 0.1875rem #39393c,
-    0.1875rem 0.25rem #39393c, 0.125rem 0.1875rem #39393c,
-    0.1875rem 0.125rem #39393c;
+  --color-terminal-black: #111;
+  --color-terminal-gray: #252526;
+  --color-terminal-green: #00FF9C;
+  --color-terminal-heading: #b3d77e;
+  --color-terminal-grey: #999;
+  --color-terminal-title: #ffb84a;
 
   --font-funnel-sans: var(--funnelSans);
-  --font-host-grotesk: var(--hostGrotesk);
+  --font-mono: var(--font-geist-mono);
+
+  --shadow-button: 0 2px 2px 0 rgba(0, 0, 0, .08), 0 4px 7px 0 rgba(0, 0, 0, .2), 0 .5px 2px 0 rgba(0, 0, 0, .15), inset 0 -1px .2px 0 rgba(0, 0, 0, .12), inset 0 1px .2px 0 #fff;
 }
 
 /*
@@ -52,15 +56,12 @@
 
 
 body {
-    background: #131316;
+    background: var(--background);
+    color: var(--foreground);
     hyphens: auto;
     -webkit-font-smoothing: antialiased
 }
 
-.textGradient {
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    background-image: linear-gradient(to right bottom, #fff 30%, hsla(0, 0%, 100%, .38));
+.curve {
+  clip-path: path("M 378 0 c 28.2843 0 42.4264 0 51.2132 8.7868 a 30 30 0 0 1 0 0 c 8.7868 8.7868 8.7868 22.9289 8.7868 51.2132 L 438 535 c 0 28.2843 0 42.4264 -8.7868 51.2132 a 30 30 0 0 1 0 0 c -8.7868 8.7868 -22.9289 8.7868 -51.2132 8.7868 L 60 595 c -28.2843 0 -42.4264 0 -51.2132 -8.7868 a 30 30 0 0 1 0 0 c -8.7868 -8.7868 -8.7868 -22.9289 -8.7868 -51.2132 L 0 60 c 0 -28.2843 0 -42.4264 8.7868 -51.2132 a 30 30 0 0 1 0 0 c 8.7868 -8.7868 22.9289 -8.7868 51.2132 -8.7868 Z");
 }

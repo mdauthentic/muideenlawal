@@ -1,10 +1,7 @@
 import type { Metadata, Viewport } from 'next'
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import { funnelSans } from '@/fonts/font'
+import { Geist_Mono, Funnel_Sans } from "next/font/google";
 import './globals.css'
-import { Navigation } from '@/components/Navigation';
-import Quote from '@/components/Quote';
-import { Footer } from '@/components/Footer';
 
 
 export const metadata: Metadata = {
@@ -16,6 +13,16 @@ export const viewport: Viewport = {
   themeColor: "#bce4f5"
 }
 
+const funnelSans = Funnel_Sans({
+  variable: "--font-funnel-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
 export default function RootLayout({
   children,
 }: {
@@ -23,11 +30,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${funnelSans.variable} antialiased`}>
-        <Navigation />
+      <body className={`${funnelSans.variable} ${geistMono.variable} antialiased`}>
         {children}
-        <Quote />
-        <Footer />
         <SpeedInsights />
       </body>
     </html>

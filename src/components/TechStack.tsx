@@ -1,18 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronRightIcon } from "lucide-react";
+import { FiChevronRight } from "react-icons/fi";
 
 export default function Page() {
     return (
-        <section className="py-16">
-            <div className="mx-auto max-w-2xl px-6 lg:px-2">
-                <div className="flex flex-col gap-4 mb-5">
-                    <h2 className="textGradient text-2xl leading-[clamp(2.125rem,5.5vw,2.75rem)] tracking-[-0.01em]">My Stacks</h2>
-                    <p className="text-sm tracking-[-0.018em]">
-                        I have used a couple of tools over the years. Here are some of the tools I use on a day-to-day basis.
-                    </p>
+        <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 text-sm">
+            <div className="sticky top-8">
+                <div className="flex flex-col justify-start h-auto">
+                    <h2 className="font-mono font-medium leading-none text-xs/6 uppercase">STACKS</h2>
                 </div>
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+            </div>
+
+            <div className="relative overflow-visible h-min w-full">
+                <div className="grid grid-cols-6 gap-4">
                     {stackDetails.map((stack) =>
                         <StackItem name={stack.name} href={stack.href} key={stack.name} />
                     )}
@@ -23,16 +23,15 @@ export default function Page() {
 }
 
 const StackItem = (stack: StackDetails) => (
-    <Link href={stack.href} title="postgres" key={stack.name} target="_blank" className="flex flex-col gap-6 group">
+    <Link href={stack.href} title={stack.name} key={stack.name} target="_blank" className="flex flex-col gap-6 group">
         <div className="flex items-center gap-3">
-            <div className="bg-cardBg flex items-center justify-center shrink-0 h-10 w-10 rounded-lg cursor-pointer overflow-hidden border border-solid border-[hsl(0_0%_100%/0.1)] transition">
-                <Image width={20} height={20} className="w-5 text-primary" src={`/icons/${stack.name}-icon.svg`} alt="Postgres Icon" />
+            <div className="bg-white flex items-center justify-center shrink-0 h-10 w-10 rounded-lg cursor-pointer overflow-hidden border border-topBorder transition">
+                <Image width={18} height={18} className="w-5 text-foreground" src={`/icons/${stack.name}-icon.svg`} alt={`${stack.name} icon`} />
             </div>
             <div className="flex flex-col gap-1">
                 <div className="flex items-center gap-3">
-                    <span className="text-primary m-0">{stack.name}</span>
-                    <div className="transition-all ease-out -ml-1 opacity-0 text-primary group-hover:opacity-100 hover:ml-0">
-                        <ChevronRightIcon size={14} strokeWidth={2} />
+                    <div className="transition-all ease-out -ml-1 opacity-0 text-foreground group-hover:opacity-100 hover:ml-0">
+                        <FiChevronRight size={14} strokeWidth={2} />
                     </div>
                 </div>
             </div>
