@@ -1,10 +1,9 @@
-import { QuoteIcon } from 'lucide-react';
 
 export default function Quote() {
     return (
         <section className="py-20 text-foreground text-sm font-funnelSans">
             <figure className="max-w-lg mx-auto text-center px-4">
-                <QuoteIcon strokeWidth={1} className="mx-auto text-foreground" />
+                {/* <QuoteIcon strokeWidth={1} className="mx-auto text-foreground" /> */}
                 <blockquote>
                     <p className="text-base italic text-primary">You have to do your own growing no matter how tall your grandfather was.</p>
                 </blockquote>
