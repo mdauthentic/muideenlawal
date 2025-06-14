@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import { Geist_Mono, Funnel_Sans } from "next/font/google";
+import { Geist_Mono, Chivo } from "next/font/google";
 import './globals.css'
 
 
@@ -13,8 +13,8 @@ export const viewport: Viewport = {
   themeColor: "#bce4f5"
 }
 
-const funnelSans = Funnel_Sans({
-  variable: "--font-funnel-sans",
+const chivo = Chivo({
+  variable: "--font-chivo",
   subsets: ["latin"],
 });
 
@@ -30,7 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${funnelSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${chivo.variable} ${geistMono.variable} antialiased`}>
         {children}
         <SpeedInsights />
       </body>

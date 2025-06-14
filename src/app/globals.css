@@ -6,30 +6,21 @@
 }
 
 @theme inline {
-  --color-background: #131316;
-  --color-foreground: #9394a1;
-  --color-primary: #f7f8f8;
-  --color-card-bg: hsl(240deg 3% 14% / 90%);
-  --color-accent: #fe552e;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
 
-  --color-primary: #b3d77e;
-  --color-secondary: #eeeee1;
-  --color-accent: #6078ff;
-  --color-topBorder: hsl(240deg 4.35% 9.02% / 14%);
-  --color-greyLight: #292b34;
-  --color-tertiary: #f2f2f2;
+  --color-page: #888;
+  --color-footerText: #999;
+  --color-img: #999;
+  --color-btn: #00794c;
+  --color-tag: #ffb700;
 
-  --color-terminal-black: #111;
-  --color-terminal-gray: #252526;
-  --color-terminal-green: #00FF9C;
-  --color-terminal-heading: #b3d77e;
-  --color-terminal-grey: #999;
-  --color-terminal-title: #ffb84a;
-
-  --font-funnel-sans: var(--funnelSans);
+  --font-sans: var(--font-chivo);
   --font-mono: var(--font-geist-mono);
 
-  --shadow-button: 0 2px 2px 0 rgba(0, 0, 0, .08), 0 4px 7px 0 rgba(0, 0, 0, .2), 0 .5px 2px 0 rgba(0, 0, 0, .15), inset 0 -1px .2px 0 rgba(0, 0, 0, .12), inset 0 1px .2px 0 #fff;
+  --shadow-page: 2px 2px #ccc;
+  --shadow-link: 2px 2px #bbb;
+  --shadow-img: 2px 2px #ddd;
 }
 
 /*
@@ -59,7 +50,9 @@ body {
     background: var(--background);
     color: var(--foreground);
     hyphens: auto;
-    -webkit-font-smoothing: antialiased
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    line-height: 1.5rem
 }
 
 .curve {
