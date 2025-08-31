@@ -1,26 +1,20 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 :root {
-  --background: #fff;
-  --foreground: #332b29;
+  --background: #142218;
+  --foreground: #ffffeb;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
-  --color-page: #888;
-  --color-footerText: #999;
-  --color-img: #999;
-  --color-btn: #00794c;
-  --color-tag: #ffb700;
+  --color-primary: #ff8356;
+  --color-secondary: #cfa46c;
 
   --font-sans: var(--font-chivo);
+  --font-serif: var(--font-trocchi);
   --font-mono: var(--font-geist-mono);
-
-  --shadow-page: 2px 2px #ccc;
-  --shadow-link: 2px 2px #bbb;
-  --shadow-img: 2px 2px #ddd;
 }
 
 /*
@@ -42,19 +36,14 @@
 }
 
 ::selection {
-    background-color: #8576f344;
+  background-color: #8576f344;
 }
-
 
 body {
-    background: var(--background);
-    color: var(--foreground);
-    hyphens: auto;
-    -webkit-font-smoothing: antialiased;
-    font-weight: 400;
-    line-height: 1.5rem
-}
-
-.curve {
-  clip-path: path("M 378 0 c 28.2843 0 42.4264 0 51.2132 8.7868 a 30 30 0 0 1 0 0 c 8.7868 8.7868 8.7868 22.9289 8.7868 51.2132 L 438 535 c 0 28.2843 0 42.4264 -8.7868 51.2132 a 30 30 0 0 1 0 0 c -8.7868 8.7868 -22.9289 8.7868 -51.2132 8.7868 L 60 595 c -28.2843 0 -42.4264 0 -51.2132 -8.7868 a 30 30 0 0 1 0 0 c -8.7868 -8.7868 -8.7868 -22.9289 -8.7868 -51.2132 L 0 60 c 0 -28.2843 0 -42.4264 8.7868 -51.2132 a 30 30 0 0 1 0 0 c 8.7868 -8.7868 22.9289 -8.7868 51.2132 -8.7868 Z");
+  background: var(--background);
+  color: var(--foreground);
+  hyphens: auto;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  line-height: 1.5rem;
 }
