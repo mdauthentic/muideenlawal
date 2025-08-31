@@ -65,9 +65,9 @@ export const About = () => (
           <p>
             With a diverse background that cuts across various areas of software
             development, my passion for technology drives me to tinker with
-            tools and innovate robust, scalable solutions —whether it’s building
-            internal tooling or enabling users to interact seamlessly with
-            software products and services.
+            tools and innovate robust, scalable solutions —whether it&apos;s
+            building internal tooling or enabling users to interact seamlessly
+            with software products and services.
           </p>
           <p>
             In 2021, I received a PhD in Computer Science from the Université
@@ -75,7 +75,7 @@ export const About = () => (
             the Recursive Relational Algebra&quot;, supervised by{" "}
             <Link
               href="https://en.wikipedia.org/wiki/Pierre_Geneves"
-              title="Pierre's wikipedia"
+              title="Pierre wikipedia"
             >
               Pierre Genevès{" "}
             </Link>
@@ -84,9 +84,9 @@ export const About = () => (
             Masters degeree in System and Software Engineering.
           </p>
           <p>
-            I've worked on a plethora of projects over the years, from fullstack
-            to backend to big data and hobby projects. I enjoy listening to
-            music, learning new tools and technologies.
+            I&apos;ve worked on a plethora of projects over the years, from
+            fullstack to backend to big data and hobby projects. I enjoy
+            listening to music, learning new tools and technologies.
           </p>
         </div>
       </div>
