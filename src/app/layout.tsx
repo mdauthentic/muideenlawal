@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Geist_Mono, Chivo, Trocchi } from "next/font/google";
+import { Chivo, Trocchi } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#bce4f5",
+  themeColor: "#142218",
 };
 
 const trocchi = Trocchi({
@@ -23,9 +24,9 @@ const chivo = Chivo({
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const sligoil = localFont({
+  src: "./../fonts/SligoilVF.woff2",
+  variable: "--font-sligoil",
 });
 
 export default function RootLayout({
@@ -36,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${chivo.variable} ${trocchi.variable} ${geistMono.variable} antialiased`}
+        className={`${chivo.variable} ${trocchi.variable} ${sligoil.variable} antialiased`}
       >
         {children}
         <SpeedInsights />
