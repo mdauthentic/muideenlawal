@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Brygada_1918, Chivo } from "next/font/google";
+import { Trocchi, Chivo } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -13,8 +13,9 @@ export const viewport: Viewport = {
   themeColor: "#142218",
 };
 
-const brygada = Brygada_1918({
-  variable: "--font-brygada",
+const trocchi = Trocchi({
+  variable: "--font-trocchi",
+  weight: "400",
   subsets: ["latin"],
 });
 
@@ -36,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${chivo.variable} ${brygada.variable} ${sligoil.variable} antialiased`}
+        className={`${chivo.variable} ${trocchi.variable} ${sligoil.variable} antialiased`}
       >
         {children}
         <SpeedInsights />
