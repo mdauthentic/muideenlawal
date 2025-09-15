@@ -65,9 +65,20 @@ export const About = () => (
           <p>
             With a diverse background that cuts across various areas of software
             development, my passion for technology drives me to tinker with
-            tools and innovate robust, scalable solutions —whether it&apos;s
+            tools and innovate robust, scalable solutions, whether it&apos;s
             building internal tooling or enabling users to interact seamlessly
             with software products and services.
+          </p>
+          <p>
+            I work as a software engineer at{" "}
+            <Link
+              href="https://www.c12qe.com/"
+              title="C12 Quantum Electronics"
+              className="underline hover:text-fuchsia-300"
+            >
+              C12 Quantum Electronics
+            </Link>{" "}
+            , developing software solutions for quantum measurement team.
           </p>
           <p>
             In 2021, I received a PhD in Computer Science from the Université
