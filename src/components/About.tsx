@@ -77,8 +77,8 @@ export const About = () => (
               className="underline hover:text-fuchsia-300"
             >
               C12 Quantum Electronics
-            </Link>{" "}
-            , developing software solutions for quantum measurement team.
+            </Link>
+            , developing software solutions for the quantum measurement team.
           </p>
           <p>
             In 2021, I received a PhD in Computer Science from the Université
