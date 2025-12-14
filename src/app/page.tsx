@@ -3,7 +3,7 @@ import { About } from "@/components/About";
 
 export default function Home() {
   return (
-    <div className="font-serif text-sm">
+    <div className="font-sans text-sm">
       <Navigation />
       <About />
     </div>

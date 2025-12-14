@@ -5,7 +5,7 @@ import { DottedLink } from "./DotteLink";
 export const About = () => (
   <>
     <section className="pt-16 sm:pt-24 lg:pt-32 pr-6 sm:pr-10 lg:pr-32 pb-0 pl-6 sm:pl-10 lg:pl-64 max-w-[70rem]">
-      <div className="items-start flex flex-none flex-col flex-nowrap gap-16 h-min justify-start overflow-visible relative w-full">
+      <div className="items-start flex flex-none flex-col flex-nowrap gap-6 h-min justify-start overflow-visible relative w-full">
         <Link
           href="/"
           title="Profile Image"
@@ -32,8 +32,33 @@ export const About = () => (
         </div>
         {/* End Intro */}
 
+        <div className="grid grid-cols-2 gap-12 mt-8 w-full md:w-[66%]">
+          <div className="flex flex-col gap-3">
+            <p className="text-xs uppercase tracking-wide text-neutral-400 font-mono">
+              Currently
+            </p>
+            <p>
+              Sr. Software Engineer at{" "}
+              <Link
+                href="https://www.c12qe.com/"
+                title="C12 Quantum Electronics"
+                className="underline hover:text-fuchsia-300"
+              >
+                C12
+              </Link>
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-3">
+            <p className="text-xs uppercase tracking-wide text-neutral-400 font-mono">
+              Focus
+            </p>
+            <p className="text-sm">Quantum Computing, Python, Rust, Database</p>
+          </div>
+        </div>
+        {/* End Role */}
         {/* Social */}
-        <div className="items-start flex flex-none flex-col flex-nowrap gap-0 h-min justify-start overflow-visible relative w-min p-0">
+        {/* <div className="items-start flex flex-none flex-col flex-nowrap gap-0 h-min justify-start overflow-visible relative w-min p-0 pt-4">
           <div className="inline-flex items-start gap-4">
             <DottedLink
               title="LinkedIn"
@@ -45,7 +70,7 @@ export const About = () => (
               href="https://bsky.app/profile/mdauthentic.bsky.social"
             />
           </div>
-        </div>
+        </div> */}
         {/* Social */}
       </div>
     </section>
@@ -63,14 +88,14 @@ export const About = () => (
         {/* End Title */}
         <div className="w-full lg:w-8/12 flex flex-col gap-[1.2rem]">
           <p>
-            With a diverse background that cuts across various areas of software
-            development, my passion for technology drives me to tinker with
-            tools and innovate robust, scalable solutions, whether it&apos;s
-            building internal tooling or enabling users to interact seamlessly
-            with software products and services.
+            My background cuts across various areas of software development and
+            my passion for technology drives me to tinker with tools and
+            innovate robust, scalable solutions, whether it&apos;s building
+            internal tooling or enabling users to interact seamlessly with
+            software products and services.
           </p>
           <p>
-            I work as a software engineer at{" "}
+            I am currently leading the Quantum Measurement Software Team at{" "}
             <Link
               href="https://www.c12qe.com/"
               title="C12 Quantum Electronics"
@@ -78,7 +103,7 @@ export const About = () => (
             >
               C12 Quantum Electronics
             </Link>
-            , developing software solutions for the quantum measurement team.
+            , developing software solutions for the quantum chip innovation.
           </p>
           <p>
             In 2021, I received a PhD in Computer Science from the Université
