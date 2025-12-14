@@ -87,13 +87,6 @@ export const About = () => (
         {/* End Title */}
         <div className="w-full lg:w-8/12 flex flex-col gap-[1.2rem]">
           <p>
-            My background cuts across various areas of software development and
-            my passion for technology drives me to tinker with tools and
-            innovate robust, scalable solutions, whether it&apos;s building
-            internal tooling or enabling users to interact seamlessly with
-            software products and services.
-          </p>
-          <p>
             I am currently leading the Quantum Measurement Software Team at{" "}
             <Link
               href="https://www.c12qe.com/"
@@ -104,6 +97,14 @@ export const About = () => (
             </Link>
             , developing software solutions for the quantum chip innovation.
           </p>
+          <p>
+            My background cuts across various areas of software development and
+            my passion for technology drives me to tinker with tools and
+            innovate robust, scalable solutions, whether it&apos;s building
+            internal tooling or enabling users to interact seamlessly with
+            software products and services.
+          </p>
+
           <p>
             In 2021, I received a PhD in Computer Science from the Université
             Grenoble Alpes, France and my thesis is &quot;On Cost Estimation for
