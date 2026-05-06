@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Trocchi, Chivo, Geist_Mono } from "next/font/google";
-import localFont from "next/font/local";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -27,11 +26,6 @@ const chivo = Chivo({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
-});
-
-const sligoil = localFont({
-  src: "./../fonts/SligoilVF.woff2",
-  variable: "--font-sligoil",
 });
 
 export default function RootLayout({
