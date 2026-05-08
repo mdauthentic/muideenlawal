@@ -1,9 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #0e0e0c;
+  /* --bg: #0e0e0c;
   --fg: #e8e6df;
-  --dim: #6b6a64;
+  --dim: #9b9a92; */
+
+  --bg: #11110f;
+  --fg: #f3f2ea;
+  --dim: #9b9a92;
   --line: #1f1f1c;
   --hot: #d6ff3e;
 }
@@ -11,8 +15,8 @@
 @theme inline {
   --color-background: var(--bg);
   --color-foreground: var(--fg);
-  --color-line: var(--line);
   --color-dim: var(--dim);
+  --color-line: var(--line);
   --color-hot: var(--hot);
 
   --font-sans: var(--font-chivo);
