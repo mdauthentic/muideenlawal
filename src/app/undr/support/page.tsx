@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-const supportEmail = "support@muideenlawal.com";
-
 const questions = [
   {
     title: "Where are my notes stored?",
@@ -48,12 +46,31 @@ export default function UndrSupportPage() {
             undr Support<span className="text-hot">.</span>
           </h1>
           <p className="text-dim">
-            Need help? Email{" "}
-            <Link href={`mailto:${supportEmail}`}>{supportEmail}</Link>.
+            Need help? Contact me through GitHub or LinkedIn.
           </p>
         </header>
 
         <div className="space-y-10">
+          <section>
+            <h2 className="mb-3.5 text-label uppercase tracking-label text-dim">
+              // Contact
+            </h2>
+            <div className="grid gap-x-6 gap-y-1.5 border-l border-line pl-4 sm:grid-cols-2">
+              <Link
+                href="https://github.com/mdauthentic"
+                className="border-b border-dashed border-line py-1.5 text-dim hover:text-hot"
+              >
+                GitHub / @mdauthentic
+              </Link>
+              <Link
+                href="https://linkedin.com/in/ma-lawal"
+                className="border-b border-dashed border-line py-1.5 text-dim hover:text-hot"
+              >
+                LinkedIn / ma-lawal
+              </Link>
+            </div>
+          </section>
+
           {questions.map((question) => (
             <section key={question.title}>
               <h2 className="mb-3.5 text-label uppercase tracking-label text-dim">

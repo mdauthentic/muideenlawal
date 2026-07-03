@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 const effectiveDate = "July 3, 2026";
-const supportEmail = "support@muideenlawal.com";
 
 const sections = [
   {
@@ -36,7 +35,8 @@ const sections = [
   {
     title: "Support and this website",
     body: [
-      "If you email support, your email address and message are used only to respond to your request.",
+      "For support, use the undr support page linked below.",
+      "If you contact Muideen Lawal through a linked support channel, the information you choose to send is used only to respond to your request.",
       "This public website may receive standard hosting logs and performance information needed to operate the site. That website activity is separate from the undr app, which does not send app data to this website.",
     ],
   },
@@ -105,8 +105,8 @@ export default function UndrPrivacyPage() {
             </h2>
             <div className="space-y-4 border-l border-line pl-4 text-dim">
               <p>
-                Questions about privacy? Email{" "}
-                <Link href={`mailto:${supportEmail}`}>{supportEmail}</Link>.
+                Questions about privacy? Use the{" "}
+                <Link href="/undr/support">undr support page</Link>.
               </p>
             </div>
           </section>
