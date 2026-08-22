@@ -36,6 +36,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.4,
         },
         {
+            url: `${HOST}/dueward/privacy`,
+            lastModified: new Date(),
+            changeFrequency: 'yearly',
+            priority: 0.4,
+        },
+        {
+            url: `${HOST}/dueward/support`,
+            lastModified: new Date(),
+            changeFrequency: 'yearly',
+            priority: 0.4,
+        },
+        {
             url: `${HOST}/duewise/privacy`,
             lastModified: new Date(),
             changeFrequency: 'yearly',
