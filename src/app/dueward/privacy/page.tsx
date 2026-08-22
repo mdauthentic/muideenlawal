@@ -15,7 +15,7 @@ const sections: readonly Section[] = [
     title: "The short version",
     body: [
       "Dueward is a private renewal planner that runs entirely on your iPhone.",
-      "The app does not collect your data. It has no user accounts, no developer-operated server, and makes no network requests. The developer receives no information about you or your use of Dueward.",
+      "The app does not collect your data. It has no user accounts, no developer-operated server, and makes no network requests. Dueward does not transmit any information about you or your use of the app to the developer.",
     ],
   },
   {
