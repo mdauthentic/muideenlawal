@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-const effectiveDate = "August 22, 2026";
+const effectiveDate = "September 9, 2026";
 const supportEmail = "muideen.lawal320@gmail.com";
 
 type Section = {
@@ -14,8 +14,8 @@ const sections: readonly Section[] = [
   {
     title: "The short version",
     body: [
-      "Dueward is a private renewal planner that runs entirely on your iPhone.",
-      "The app does not collect your data. It has no user accounts, no developer-operated server, and makes no network requests. Dueward does not transmit any information about you or your use of the app to the developer.",
+      "Recurden is a private renewal planner that runs entirely on your iPhone.",
+      "The app does not collect your data. It has no user accounts, no developer-operated server, and makes no network requests. Recurden does not transmit any information about you or your use of the app to the developer.",
     ],
   },
   {
@@ -26,61 +26,62 @@ const sections: readonly Section[] = [
     items: [
       "Subscriptions you enter, including prices, currencies, renewal schedules, notes, cancellation links, and change history.",
       "Reminder rules and the decisions you record for upcoming renewals.",
+      "Snoozed decision dates and the last successful export date, held locally in the iOS Keychain and excluded from device and portable backups.",
       "Optionally, monthly take-home pay and paid hours per week, held in the iOS Keychain.",
-      "App preferences such as appearance and whether Dueward Lock is enabled.",
-      "Shared text or images waiting for you to review in Dueward.",
+      "App preferences such as appearance and whether Recurden Lock is enabled.",
+      "Shared text or images waiting for you to review in Recurden.",
     ],
   },
   {
     title: "Screenshots and shared content",
     body: [
-      "When you choose a receipt screenshot, Apple Vision recognizes its text on your device. Dueward uses that text to propose editable subscription details and discards the selected image after processing.",
-      "Text and images sent through the Dueward share extension remain on the device and are removed after processing. Nothing becomes a saved subscription until you review and confirm it.",
+      "When you choose a receipt screenshot, Apple Vision recognizes its text on your device. Recurden uses that text to propose editable subscription details and discards the selected image after processing.",
+      "Text and images sent through the Recurden share extension remain on the device and are removed after processing. Nothing becomes a saved subscription until you review and confirm it.",
     ],
   },
   {
     title: "Notifications",
     body: [
-      "Renewal reminders are local notifications scheduled by Dueward on your iPhone.",
+      "Renewal reminders are local notifications scheduled by Recurden on your iPhone.",
       "No push-notification service is involved, and no notification content leaves your device.",
     ],
   },
   {
     title: "Face ID and passcode",
     body: [
-      "If you enable Dueward Lock, authentication is performed by iOS using Face ID or your device passcode.",
-      "Dueward never receives or stores biometric data. It receives only the result of the authentication attempt.",
+      "If you enable Recurden Lock, authentication is performed by iOS using Face ID or your device passcode.",
+      "Recurden never receives or stores biometric data. It receives only the result of the authentication attempt.",
     ],
   },
   {
     title: "Backups",
     body: [
       "Backups you export are readable JSON files saved wherever you choose through the Files app.",
-      "You control what happens to an exported file. The optional financial profile and Dueward Lock preference are excluded from backups.",
+      "You control what happens to an exported file. The optional financial profile, Recurden Lock preference, snoozes, and export history are excluded from portable backups.",
     ],
   },
   {
     title: "Links you open",
     body: [
-      "You can save a provider's cancellation link on a subscription. Dueward never opens that link on its own.",
-      "Tapping Open Cancellation Page, Privacy Policy, or Support hands the address to your browser. That visit is made by your browser and is subject to the destination website's privacy practices; the Dueward app itself contains no networking code.",
+      "You can save a provider's cancellation link on a subscription. Recurden never opens that link on its own.",
+      "Tapping Open Cancellation Page, Privacy Policy, or Support hands the address to your browser. That visit is made by your browser and is subject to the destination website's privacy practices; the Recurden app itself contains no networking code.",
     ],
   },
   {
     title: "Third parties",
     body: [
-      "Dueward contains no analytics, advertising, tracking, crash-reporting, or third-party data-collection SDKs.",
+      "Recurden contains no analytics, advertising, tracking, crash-reporting, or third-party data-collection SDKs.",
     ],
   },
   {
     title: "Your choices",
     body: [
-      "You can edit or delete individual subscriptions, remove the optional financial profile, disable reminders, or use Erase All Dueward Data in Settings.",
+      "You can edit or delete individual subscriptions, remove the optional financial profile, disable reminders, or use Erase All Recurden Data in Settings.",
     ],
   },
   {
     title: "Children",
-    body: ["Dueward collects no data from anyone, including children."],
+    body: ["Recurden collects no data from anyone, including children."],
   },
   {
     title: "Changes",
@@ -91,12 +92,13 @@ const sections: readonly Section[] = [
 ];
 
 export const metadata: Metadata = {
-  title: "Dueward Privacy Policy | Muideen Lawal",
+  alternates: { canonical: "https://muideenlawal.com/recurden/privacy" },
+  title: "Recurden Privacy Policy | Muideen Lawal",
   description:
-    "Privacy policy for Dueward, a private on-device subscription renewal planner.",
+    "Privacy policy for Recurden, a private on-device subscription renewal planner.",
 };
 
-export default function DuewardPrivacyPage() {
+export default function RecurdenPrivacyPage() {
   return (
     <main className="grid-paper min-h-dvh bg-background p-4 font-mono text-foreground sm:p-6">
       <article className="relative mx-auto my-8 max-w-3xl border border-line bg-background p-6 sm:my-12 sm:p-12">
@@ -107,10 +109,10 @@ export default function DuewardPrivacyPage() {
 
         <header className="mb-9 border-b border-dashed border-line pb-4">
           <p className="mb-3 text-label uppercase tracking-label text-dim">
-            ~/dueward/privacy.md
+            ~/recurden/privacy.md
           </p>
           <h1 className="mb-2 text-who font-medium tracking-tightish">
-            Dueward Privacy Policy<span className="text-hot">.</span>
+            Recurden Privacy Policy<span className="text-hot">.</span>
           </h1>
           <p className="text-dim">Effective {effectiveDate}</p>
         </header>
@@ -152,7 +154,7 @@ export default function DuewardPrivacyPage() {
               </p>
               <p>
                 For help using the app, see the{" "}
-                <Link href="/dueward/support">Dueward support page</Link>.
+                <Link href="/recurden/support">Recurden support page</Link>.
               </p>
               <p>Developer: Muideen Lawal.</p>
             </div>
