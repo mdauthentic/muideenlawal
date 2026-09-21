@@ -47,7 +47,7 @@ export const selectedProjects = [
     approach:
       "A menu-bar app with passive and interactive focus states, window modes, live reload, and Finder and command-line integration.",
     detail:
-      "The bundled leaf command opens a document, places it beside your work, or reads Markdown from standard input. These examples come from the project’s documentation.",
+      "The bundled leaf command opens a document, places it beside your work, or reads Markdown from standard input. These examples come from the project's documentation.",
     image: null,
     alt: "",
     caption: "Documented CLI usage · not an app screenshot",

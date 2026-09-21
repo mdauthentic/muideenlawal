@@ -14,7 +14,7 @@ export default function Home() {
       >
         <div className="flex items-center justify-between gap-5">
           <Eyebrow>{profile.name} / Software engineer</Eyebrow>
-          <span className="hidden text-xs text-subtle sm:block">
+          <span className="hidden text-xs text-subtle sm:block uppercase font-mono">
             {profile.location}
           </span>
         </div>
@@ -29,8 +29,8 @@ export default function Home() {
           </h1>
           <div className="shrink-0 pb-2">
             <p className="max-w-xs text-sm leading-7">
-              I'm Muideen. I lead measurement software at C12. Before that:
-              Opensee and a PhD in databases.
+              I&apos;m Muideen, a polyglot software engineer with a passion for
+              technology and tinkering.
             </p>
             <a
               href="#rooms"

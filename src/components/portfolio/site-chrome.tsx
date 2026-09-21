@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowUp } from "lucide-react";
 import { profile } from "../profile";
 import { ExternalLink, SkipLink } from "./ui";
+import { LocalTime } from "./local-time";
 
 export function SiteHeader() {
   return (
@@ -18,10 +19,7 @@ export function SiteHeader() {
             className="mt-2 size-1.5 rounded-full bg-current"
           />
         </Link>
-        <span className="hidden text-xs text-subtle lg:block">
-          {/* Software engineer, Researcher · {profile.location} */}
-          Software engineer · {profile.location}
-        </span>
+        <LocalTime />
         <ExternalLink href={profile.linkedin} className="shrink-0 text-xs">
           Say hello
         </ExternalLink>
