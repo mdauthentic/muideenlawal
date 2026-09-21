@@ -1,3 +1,4 @@
+import { DocumentPage, DocumentSection, PolicySections } from "@/components/portfolio/document-page";
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -98,69 +99,9 @@ export const metadata: Metadata = {
     "Privacy policy for Recurden, a private on-device subscription renewal planner.",
 };
 
-export default function RecurdenPrivacyPage() {
-  return (
-    <main className="grid-paper min-h-dvh bg-background p-4 font-mono text-foreground sm:p-6">
-      <article className="relative mx-auto my-8 max-w-3xl border border-line bg-background p-6 sm:my-12 sm:p-12">
-        <span className="terminal-corner -top-1.5 -left-1.5 bg-hot" />
-        <span className="terminal-corner -right-1.5 -bottom-1.5 bg-hot" />
-        <span className="terminal-corner -top-1.5 -right-1.5 border border-hot" />
-        <span className="terminal-corner -bottom-1.5 -left-1.5 border border-hot" />
-
-        <header className="mb-9 border-b border-dashed border-line pb-4">
-          <p className="mb-3 text-label uppercase tracking-label text-dim">
-            ~/recurden/privacy.md
-          </p>
-          <h1 className="mb-2 text-who font-medium tracking-tightish">
-            Recurden Privacy Policy<span className="text-hot">.</span>
-          </h1>
-          <p className="text-dim">Effective {effectiveDate}</p>
-        </header>
-
-        <div className="space-y-10">
-          {sections.map((section) => (
-            <section key={section.title}>
-              <h2 className="mb-3.5 text-label uppercase tracking-label text-dim">
-                // {section.title}
-              </h2>
-              <div className="space-y-4 border-l border-line pl-4 text-dim">
-                {section.body.map((paragraph) => (
-                  <p key={paragraph}>{paragraph}</p>
-                ))}
-                {section.items && (
-                  <ul className="space-y-2">
-                    {section.items.map((item) => (
-                      <li key={item} className="flex gap-2.5">
-                        <span aria-hidden="true" className="text-hot">
-                          -
-                        </span>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </div>
-            </section>
-          ))}
-
-          <section>
-            <h2 className="mb-3.5 text-label uppercase tracking-label text-dim">
-              // Contact
-            </h2>
-            <div className="space-y-4 border-l border-line pl-4 text-dim">
-              <p>
-                Questions about this policy? Email{" "}
-                <a href={`mailto:${supportEmail}`}>{supportEmail}</a>.
-              </p>
-              <p>
-                For help using the app, see the{" "}
-                <Link href="/recurden/support">Recurden support page</Link>.
-              </p>
-              <p>Developer: Muideen Lawal.</p>
-            </div>
-          </section>
-        </div>
-      </article>
-    </main>
-  );
+export default function PrivacyPage() {
+  return <DocumentPage app="Recurden" title="Privacy policy" intro={<>Effective {effectiveDate}</>} contents={[...sections.map(section => section.title), "Contact"]} related={{ href: "/recurden/support", label: "App support" }}>
+    <PolicySections sections={sections} />
+    <DocumentSection title="Contact"><p>Questions about this policy? Email <a href={`mailto:${supportEmail}`}>{supportEmail}</a>.</p><p>For help using the app, see the <Link href="/recurden/support">Recurden support page</Link>.</p><p>Developer: Muideen Lawal.</p></DocumentSection>
+  </DocumentPage>;
 }
