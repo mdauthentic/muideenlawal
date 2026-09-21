@@ -3,7 +3,7 @@ export const selectedProjects = [
     id: "recurden",
     number: "01",
     name: "Recurden",
-    platform: "iPhone / SwiftUI",
+    platform: "iOS / SwiftUI",
     status: "Pending App Store release",
     title: "Decide before the next charge.",
     description:
@@ -21,7 +21,7 @@ export const selectedProjects = [
     id: "aftermark",
     number: "02",
     name: "Aftermark",
-    platform: "iPhone / SwiftUI",
+    platform: "iOS / SwiftUI",
     status: "In development",
     title: "Find it the way you remember it.",
     description:

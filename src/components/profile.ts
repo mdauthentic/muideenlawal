@@ -11,7 +11,7 @@ export const profile = {
   biography:
     "I’m a software engineer in Paris. I received my PhD in Computer Science from Université Grenoble Alpes in 2021, then worked at Opensee before joining C12 in May 2025.",
   interests:
-    "My interests include databases, distributed systems, queuing systems, and quantum computing. Outside work, I’m building native apps for iPhone and Mac.",
+    "My interests include databases, distributed systems, queuing systems, and quantum computing. Outside work, I'm building anything, mostly native apps for iOS and Mac recently.",
   experience: [
     {
       company: "C12",
