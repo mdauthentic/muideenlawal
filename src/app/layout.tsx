@@ -1,27 +1,20 @@
 import type { Metadata, Viewport } from "next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Trocchi, Chivo, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { SiteHeader, SiteFooter } from "@/components/portfolio/site-chrome";
 
 export const metadata: Metadata = {
   title: "Muideen Lawal",
-  description: "Portfolio website",
+  description:
+    "Muideen Lawal — software engineer and researcher in Paris. Leading measurement software at C12 and building apps for iOS and Mac.",
 };
 
 export const viewport: Viewport = {
-  themeColor: "#142218",
+  themeColor: "#f8f8f2",
 };
 
-const trocchi = Trocchi({
-  variable: "--font-trocchi",
-  weight: "400",
-  subsets: ["latin"],
-});
-
-const chivo = Chivo({
-  variable: "--font-chivo",
-  subsets: ["latin"],
-});
+const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -34,11 +27,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-paper text-ink scheme-light">
       <body
-        className={`${chivo.variable} ${trocchi.variable} ${geistMono.variable} antialiased`}
+        className={`${geist.variable} ${geistMono.variable} flex min-h-dvh flex-col bg-paper font-sans text-ink antialiased`}
       >
+        <SiteHeader />
         {children}
+        <SiteFooter />
         <SpeedInsights />
       </body>
     </html>
